@@ -25,14 +25,19 @@
         <span class="logo-text">Honeymooners</span>
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#how-it-works" data-i18n="nav.how-it-works">How It Works</a></li>
+        <li><a href="#testimonials" data-i18n="nav.reviews">Reviews</a></li>
+        <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="#download" class="btn btn-primary">Get Started</a>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-opt active" id="lang-en">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-opt" id="lang-gr">ΕΛ</span>
+        </button>
+        <a href="#download" class="btn btn-primary" data-i18n="nav.cta">Get Started</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -55,35 +60,35 @@
       <div class="hero-content fade-in-up">
         <div class="hero-badge">
           <span class="badge-dot"></span>
-          The #1 Wedding Planning App
+          <span data-i18n="hero.badge">The #1 Wedding Planning App</span>
         </div>
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-i18n="hero.title">
           Your Perfect Wedding,<br />
           <span class="script">Planned Together</span>
         </h1>
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
           Love requires patience — and the right tools. Honeymooners brings everything you need to plan your dream wedding into one beautiful, effortless experience.
         </p>
         <div class="hero-actions">
-          <a href="#download" class="btn btn-primary btn-lg">Start Planning Free</a>
-          <a href="#how-it-works" class="btn btn-ghost btn-lg">
+          <a href="#download" class="btn btn-primary btn-lg" data-i18n="hero.cta-primary">Start Planning Free</a>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg" data-i18n="hero.cta-secondary">
             <span class="play-icon">▶</span> See How It Works
           </a>
         </div>
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-number">10K+</span>
-            <span class="stat-label">Couples</span>
+            <span class="stat-label" data-i18n="hero.stat1-label">Couples</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
             <span class="stat-number">50K+</span>
-            <span class="stat-label">Weddings Planned</span>
+            <span class="stat-label" data-i18n="hero.stat2-label">Weddings Planned</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
             <span class="stat-number">4.9★</span>
-            <span class="stat-label">App Rating</span>
+            <span class="stat-label" data-i18n="hero.stat3-label">App Rating</span>
           </div>
         </div>
       </div>
@@ -99,46 +104,46 @@
                 <span class="app-settings-icon">⚙</span>
               </div>
               <div class="app-countdown-widget">
-                <p class="countdown-label">Your Big Day In</p>
+                <p class="countdown-label" data-i18n="app.countdown-label">Your Big Day In</p>
                 <div class="countdown-row">
                   <div class="cdown-unit">
                     <span class="cdown-num" id="days">127</span>
-                    <span class="cdown-sub">days</span>
+                    <span class="cdown-sub" data-i18n="app.days">days</span>
                   </div>
                   <div class="cdown-unit">
                     <span class="cdown-num" id="hours">14</span>
-                    <span class="cdown-sub">hrs</span>
+                    <span class="cdown-sub" data-i18n="app.hrs">hrs</span>
                   </div>
                   <div class="cdown-unit">
                     <span class="cdown-num" id="mins">32</span>
-                    <span class="cdown-sub">min</span>
+                    <span class="cdown-sub" data-i18n="app.mins">min</span>
                   </div>
                   <div class="cdown-unit">
                     <span class="cdown-num" id="secs">58</span>
-                    <span class="cdown-sub">sec</span>
+                    <span class="cdown-sub" data-i18n="app.secs">sec</span>
                   </div>
                 </div>
               </div>
               <div class="app-quick-grid">
                 <div class="quick-item rose">
                   <span class="quick-emoji">👥</span>
-                  <span class="quick-label">Guests</span>
+                  <span class="quick-label" data-i18n="app.guests">Guests</span>
                 </div>
                 <div class="quick-item sage">
                   <span class="quick-emoji">🏛️</span>
-                  <span class="quick-label">Venue</span>
+                  <span class="quick-label" data-i18n="app.venue">Venue</span>
                 </div>
                 <div class="quick-item champagne">
                   <span class="quick-emoji">💰</span>
-                  <span class="quick-label">Budget</span>
+                  <span class="quick-label" data-i18n="app.budget">Budget</span>
                 </div>
                 <div class="quick-item rose">
                   <span class="quick-emoji">✅</span>
-                  <span class="quick-label">Tasks</span>
+                  <span class="quick-label" data-i18n="app.tasks">Tasks</span>
                 </div>
               </div>
               <div class="app-progress-bar">
-                <span class="app-progress-label">Planning Progress</span>
+                <span class="app-progress-label" data-i18n="app.progress-label">Planning Progress</span>
                 <div class="progress-track">
                   <div class="progress-fill" style="width: 68%"></div>
                 </div>
@@ -150,11 +155,11 @@
         <!-- Floating cards -->
         <div class="float-card float-card-1">
           <span>🎉</span>
-          <span>124 guests confirmed!</span>
+          <span data-i18n="hero.float1">124 guests confirmed!</span>
         </div>
         <div class="float-card float-card-2">
           <span>📍</span>
-          <span>Venue booked ✓</span>
+          <span data-i18n="hero.float2">Venue booked ✓</span>
         </div>
       </div>
     </div>
@@ -168,7 +173,7 @@
   <!-- ===================== SOCIAL PROOF BAR ===================== -->
   <section class="trust-bar">
     <div class="container trust-inner">
-      <p class="trust-label">Trusted by couples from</p>
+      <p class="trust-label" data-i18n="trust.label">Trusted by couples from</p>
       <div class="trust-logos">
         <span class="trust-city">Athens</span>
         <span class="trust-dot">·</span>
@@ -189,52 +194,52 @@
   <section class="features section" id="features">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Features</span>
-        <h2 class="section-title">Everything You Need to Plan<br /><span class="script">Your Dream Wedding</span></h2>
-        <p class="section-subtitle">From the first idea to the last dance, Honeymooners has every tool you need to make your special day unforgettable.</p>
+        <span class="section-tag" data-i18n="features.tag">Features</span>
+        <h2 class="section-title" data-i18n="features.title">Everything You Need to Plan<br /><span class="script">Your Dream Wedding</span></h2>
+        <p class="section-subtitle" data-i18n="features.subtitle">From the first idea to the last dance, Honeymooners has every tool you need to make your special day unforgettable.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card reveal">
           <div class="feature-icon-wrap" style="--icon-bg: linear-gradient(135deg, #E8B4CC, #C77D9A)">
             <span class="feature-emoji">⏰</span>
           </div>
-          <h3>Wedding Countdown</h3>
-          <p>A live, real-time countdown to your big day — days, hours, minutes, and seconds. Stay excited and on track every single morning.</p>
+          <h3 data-i18n="features.f1.title">Wedding Countdown</h3>
+          <p data-i18n="features.f1.desc">A live, real-time countdown to your big day — days, hours, minutes, and seconds. Stay excited and on track every single morning.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon-wrap" style="--icon-bg: linear-gradient(135deg, #A3C5B1, #7BA68E)">
             <span class="feature-emoji">👥</span>
           </div>
-          <h3>Guest Management</h3>
-          <p>Manage your entire guest list with ease. Track RSVPs, dietary needs, seating arrangements, and invitations — all in one place.</p>
+          <h3 data-i18n="features.f2.title">Guest Management</h3>
+          <p data-i18n="features.f2.desc">Manage your entire guest list with ease. Track RSVPs, dietary needs, seating arrangements, and invitations — all in one place.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon-wrap" style="--icon-bg: linear-gradient(135deg, #FBF0E4, #E8C9A8)">
             <span class="feature-emoji">🏛️</span>
           </div>
-          <h3>Venue & Church</h3>
-          <p>Browse stunning venues and churches, compare options side by side, and book your perfect ceremony and reception locations.</p>
+          <h3 data-i18n="features.f3.title">Venue &amp; Church</h3>
+          <p data-i18n="features.f3.desc">Browse stunning venues and churches, compare options side by side, and book your perfect ceremony and reception locations.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon-wrap" style="--icon-bg: linear-gradient(135deg, #E8B4CC, #C77D9A)">
             <span class="feature-emoji">💰</span>
           </div>
-          <h3>Budget Tracker</h3>
-          <p>Stay on top of every expense with a real-time budget dashboard. Allocate spending by category and never go over budget again.</p>
+          <h3 data-i18n="features.f4.title">Budget Tracker</h3>
+          <p data-i18n="features.f4.desc">Stay on top of every expense with a real-time budget dashboard. Allocate spending by category and never go over budget again.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon-wrap" style="--icon-bg: linear-gradient(135deg, #A3C5B1, #7BA68E)">
             <span class="feature-emoji">✅</span>
           </div>
-          <h3>Smart Checklists</h3>
-          <p>Guided, customizable wedding checklists take you through every planning step — so nothing important ever falls through the cracks.</p>
+          <h3 data-i18n="features.f5.title">Smart Checklists</h3>
+          <p data-i18n="features.f5.desc">Guided, customizable wedding checklists take you through every planning step — so nothing important ever falls through the cracks.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon-wrap" style="--icon-bg: linear-gradient(135deg, #FBF0E4, #E8C9A8)">
             <span class="feature-emoji">💼</span>
           </div>
-          <h3>Service Providers</h3>
-          <p>Discover and book trusted photographers, caterers, florists, and DJs — all vetted and ready to make your day absolutely magical.</p>
+          <h3 data-i18n="features.f6.title">Service Providers</h3>
+          <p data-i18n="features.f6.desc">Discover and book trusted photographers, caterers, florists, and DJs — all vetted and ready to make your day absolutely magical.</p>
         </div>
       </div>
     </div>
@@ -245,17 +250,17 @@
     <div class="hiw-bg" aria-hidden="true"></div>
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">How It Works</span>
-        <h2 class="section-title">Get Started in<br /><span class="script">Three Simple Steps</span></h2>
-        <p class="section-subtitle">Planning your wedding has never been this easy. Join thousands of happy couples in minutes.</p>
+        <span class="section-tag" data-i18n="hiw.tag">How It Works</span>
+        <h2 class="section-title" data-i18n="hiw.title">Get Started in<br /><span class="script">Three Simple Steps</span></h2>
+        <p class="section-subtitle" data-i18n="hiw.subtitle">Planning your wedding has never been this easy. Join thousands of happy couples in minutes.</p>
       </div>
       <div class="steps-wrapper">
         <div class="step reveal">
           <div class="step-num">01</div>
           <div class="step-body">
             <div class="step-icon">🥂</div>
-            <h3>Create Your Wedding</h3>
-            <p>Sign up and set your wedding date in seconds. Add your partner and let Honeymooners tailor the experience just for you.</p>
+            <h3 data-i18n="hiw.s1.title">Create Your Wedding</h3>
+            <p data-i18n="hiw.s1.desc">Sign up and set your wedding date in seconds. Add your partner and let Honeymooners tailor the experience just for you.</p>
           </div>
         </div>
         <div class="step-arrow" aria-hidden="true">→</div>
@@ -263,8 +268,8 @@
           <div class="step-num">02</div>
           <div class="step-body">
             <div class="step-icon">💑</div>
-            <h3>Plan Together</h3>
-            <p>Invite your partner, family, or coordinator. Collaborate in real-time on guests, venues, budgets, and tasks from any device.</p>
+            <h3 data-i18n="hiw.s2.title">Plan Together</h3>
+            <p data-i18n="hiw.s2.desc">Invite your partner, family, or coordinator. Collaborate in real-time on guests, venues, budgets, and tasks from any device.</p>
           </div>
         </div>
         <div class="step-arrow" aria-hidden="true">→</div>
@@ -272,8 +277,8 @@
           <div class="step-num">03</div>
           <div class="step-body">
             <div class="step-icon">💍</div>
-            <h3>Celebrate Your Day</h3>
-            <p>Walk down the aisle stress-free, knowing every detail is handled. Focus on love — we've handled the rest.</p>
+            <h3 data-i18n="hiw.s3.title">Celebrate Your Day</h3>
+            <p data-i18n="hiw.s3.desc">Walk down the aisle stress-free, knowing every detail is handled. Focus on love — we've handled the rest.</p>
           </div>
         </div>
       </div>
@@ -288,12 +293,12 @@
           <div class="phone-frame small-phone">
             <div class="phone-screen">
               <div class="mini-app guests-screen">
-                <p class="mini-heading">Guest List</p>
-                <div class="guest-row"><span class="guest-avatar" style="background:#E8B4CC">S</span><span class="guest-name">Sarah & James</span><span class="rsvp rsvp-yes">✓</span></div>
-                <div class="guest-row"><span class="guest-avatar" style="background:#A3C5B1">E</span><span class="guest-name">Emma & Tom</span><span class="rsvp rsvp-yes">✓</span></div>
-                <div class="guest-row"><span class="guest-avatar" style="background:#FBF0E4">O</span><span class="guest-name">Olivia & Mike</span><span class="rsvp rsvp-pending">?</span></div>
-                <div class="guest-row"><span class="guest-avatar" style="background:#E8B4CC">M</span><span class="guest-name">Maria & Nikos</span><span class="rsvp rsvp-yes">✓</span></div>
-                <div class="mini-footer-stat">124 confirmed · 8 pending</div>
+                <p class="mini-heading" data-i18n="app.mini-guests">Guest List</p>
+                <div class="guest-row"><span class="guest-avatar" style="background:#E8B4CC">S</span><span class="guest-name">Sarah &amp; James</span><span class="rsvp rsvp-yes">✓</span></div>
+                <div class="guest-row"><span class="guest-avatar" style="background:#A3C5B1">E</span><span class="guest-name">Emma &amp; Tom</span><span class="rsvp rsvp-yes">✓</span></div>
+                <div class="guest-row"><span class="guest-avatar" style="background:#FBF0E4">O</span><span class="guest-name">Olivia &amp; Mike</span><span class="rsvp rsvp-pending">?</span></div>
+                <div class="guest-row"><span class="guest-avatar" style="background:#E8B4CC">M</span><span class="guest-name">Maria &amp; Nikos</span><span class="rsvp rsvp-yes">✓</span></div>
+                <div class="mini-footer-stat" data-i18n="app.guests-stat">124 confirmed · 8 pending</div>
               </div>
             </div>
           </div>
@@ -302,15 +307,15 @@
           <div class="phone-frame medium-phone">
             <div class="phone-screen">
               <div class="mini-app budget-screen">
-                <p class="mini-heading">Budget Overview</p>
-                <div class="budget-total"><span>Total</span><span class="budget-amount">€18,500</span></div>
+                <p class="mini-heading" data-i18n="app.mini-budget">Budget Overview</p>
+                <div class="budget-total"><span data-i18n="app.budget-total">Total</span><span class="budget-amount">€18,500</span></div>
                 <div class="budget-bars">
-                  <div class="bbar-row"><span>Venue</span><div class="bbar-track"><div class="bbar-fill" style="width:72%;background:var(--rose)"></div></div><span>72%</span></div>
-                  <div class="bbar-row"><span>Catering</span><div class="bbar-track"><div class="bbar-fill" style="width:58%;background:var(--sage)"></div></div><span>58%</span></div>
-                  <div class="bbar-row"><span>Flowers</span><div class="bbar-track"><div class="bbar-fill" style="width:35%;background:var(--champagne-dark)"></div></div><span>35%</span></div>
-                  <div class="bbar-row"><span>Photo</span><div class="bbar-track"><div class="bbar-fill" style="width:90%;background:var(--rose)"></div></div><span>90%</span></div>
+                  <div class="bbar-row"><span data-i18n="app.budget-venue">Venue</span><div class="bbar-track"><div class="bbar-fill" style="width:72%;background:var(--rose)"></div></div><span>72%</span></div>
+                  <div class="bbar-row"><span data-i18n="app.budget-catering">Catering</span><div class="bbar-track"><div class="bbar-fill" style="width:58%;background:var(--sage)"></div></div><span>58%</span></div>
+                  <div class="bbar-row"><span data-i18n="app.budget-flowers">Flowers</span><div class="bbar-track"><div class="bbar-fill" style="width:35%;background:var(--champagne-dark)"></div></div><span>35%</span></div>
+                  <div class="bbar-row"><span data-i18n="app.budget-photo">Photo</span><div class="bbar-track"><div class="bbar-fill" style="width:90%;background:var(--rose)"></div></div><span>90%</span></div>
                 </div>
-                <div class="mini-footer-stat">€5,580 remaining</div>
+                <div class="mini-footer-stat" data-i18n="app.budget-remaining">€5,580 remaining</div>
               </div>
             </div>
           </div>
@@ -318,17 +323,17 @@
       </div>
 
       <div class="preview-text reveal">
-        <span class="section-tag">Designed with Love</span>
-        <h2 class="section-title">Beautiful, <span class="script">Thoughtful Design</span></h2>
-        <p>Honeymooners blends elegant aesthetics with effortless usability. From the soft dusty rose palette to smooth animations — every detail is crafted for couples who deserve the best.</p>
+        <span class="section-tag" data-i18n="preview.tag">Designed with Love</span>
+        <h2 class="section-title" data-i18n="preview.title">Beautiful, <span class="script">Thoughtful Design</span></h2>
+        <p data-i18n="preview.desc">Honeymooners blends elegant aesthetics with effortless usability. From the soft dusty rose palette to smooth animations — every detail is crafted for couples who deserve the best.</p>
         <ul class="preview-features">
-          <li><span class="pf-icon">🌗</span> Light &amp; dark mode support</li>
-          <li><span class="pf-icon">🌍</span> English, Greek &amp; Cypriot languages</li>
-          <li><span class="pf-icon">📱</span> Native iOS &amp; Android apps</li>
-          <li><span class="pf-icon">🔒</span> Private &amp; secure — your data stays yours</li>
-          <li><span class="pf-icon">☁️</span> Syncs instantly across all your devices</li>
+          <li><span class="pf-icon">🌗</span><span data-i18n="preview.f1">Light &amp; dark mode support</span></li>
+          <li><span class="pf-icon">🌍</span><span data-i18n="preview.f2">English, Greek &amp; Cypriot languages</span></li>
+          <li><span class="pf-icon">📱</span><span data-i18n="preview.f3">Native iOS &amp; Android apps</span></li>
+          <li><span class="pf-icon">🔒</span><span data-i18n="preview.f4">Private &amp; secure — your data stays yours</span></li>
+          <li><span class="pf-icon">☁️</span><span data-i18n="preview.f5">Syncs instantly across all your devices</span></li>
         </ul>
-        <a href="#download" class="btn btn-primary">Download the App</a>
+        <a href="#download" class="btn btn-primary" data-i18n="preview.cta">Download the App</a>
       </div>
     </div>
   </section>
@@ -337,42 +342,42 @@
   <section class="testimonials section" id="testimonials">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">Loved by<br /><span class="script">Couples Everywhere</span></h2>
-        <p class="section-subtitle">Don't just take our word for it — hear from couples who planned their perfect day with Honeymooners.</p>
+        <span class="section-tag" data-i18n="testimonials.tag">Testimonials</span>
+        <h2 class="section-title" data-i18n="testimonials.title">Loved by<br /><span class="script">Couples Everywhere</span></h2>
+        <p class="section-subtitle" data-i18n="testimonials.subtitle">Don't just take our word for it — hear from couples who planned their perfect day with Honeymooners.</p>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card reveal">
           <div class="stars">★★★★★</div>
-          <blockquote>"Honeymooners made planning our wedding an absolute joy. The countdown timer alone kept us motivated every single day. We couldn't imagine doing this without it!"</blockquote>
+          <blockquote data-i18n="testimonials.t1.quote">"Honeymooners made planning our wedding an absolute joy. The countdown timer alone kept us motivated every single day. We couldn't imagine doing this without it!"</blockquote>
           <div class="author-row">
             <div class="author-avatar-circle" style="background:linear-gradient(135deg,#C77D9A,#E8B4CC)">S</div>
             <div>
-              <p class="author-name">Sophia &amp; Andreas</p>
-              <p class="author-detail">Married in Athens · June 2025</p>
+              <p class="author-name" data-i18n="testimonials.t1.name">Sophia &amp; Andreas</p>
+              <p class="author-detail" data-i18n="testimonials.t1.detail">Married in Athens · June 2025</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card testimonial-featured reveal">
-          <div class="testimonial-featured-badge">⭐ Featured Review</div>
+          <div class="testimonial-featured-badge" data-i18n="testimonials.t2.badge">⭐ Featured Review</div>
           <div class="stars">★★★★★</div>
-          <blockquote>"We managed 250 guests, two venues, and a tight budget — all stress-free thanks to Honeymooners. The guest management is phenomenal. Our wedding was absolutely perfect."</blockquote>
+          <blockquote data-i18n="testimonials.t2.quote">"We managed 250 guests, two venues, and a tight budget — all stress-free thanks to Honeymooners. The guest management is phenomenal. Our wedding was absolutely perfect."</blockquote>
           <div class="author-row">
             <div class="author-avatar-circle" style="background:linear-gradient(135deg,#7BA68E,#A3C5B1)">E</div>
             <div>
-              <p class="author-name">Elena &amp; Nikos</p>
-              <p class="author-detail">Married in Thessaloniki · September 2025</p>
+              <p class="author-name" data-i18n="testimonials.t2.name">Elena &amp; Nikos</p>
+              <p class="author-detail" data-i18n="testimonials.t2.detail">Married in Thessaloniki · September 2025</p>
             </div>
           </div>
         </div>
         <div class="testimonial-card reveal">
           <div class="stars">★★★★★</div>
-          <blockquote>"The budget tracker saved us thousands. We could see exactly where money was going and make smart decisions in real time. Beautiful app, beautiful wedding."</blockquote>
+          <blockquote data-i18n="testimonials.t3.quote">"The budget tracker saved us thousands. We could see exactly where money was going and make smart decisions in real time. Beautiful app, beautiful wedding."</blockquote>
           <div class="author-row">
             <div class="author-avatar-circle" style="background:linear-gradient(135deg,#F2D4BC,#D4B89A)">M</div>
             <div>
-              <p class="author-name">Maria &amp; Dimitris</p>
-              <p class="author-detail">Married in Santorini · May 2025</p>
+              <p class="author-name" data-i18n="testimonials.t3.name">Maria &amp; Dimitris</p>
+              <p class="author-detail" data-i18n="testimonials.t3.detail">Married in Santorini · May 2025</p>
             </div>
           </div>
         </div>
@@ -384,56 +389,56 @@
   <section class="pricing section" id="pricing">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Pricing</span>
-        <h2 class="section-title">Simple,<br /><span class="script">Transparent Pricing</span></h2>
-        <p class="section-subtitle">Start free and upgrade only when you need more. No hidden fees, no surprises.</p>
+        <span class="section-tag" data-i18n="pricing.tag">Pricing</span>
+        <h2 class="section-title" data-i18n="pricing.title">Simple,<br /><span class="script">Transparent Pricing</span></h2>
+        <p class="section-subtitle" data-i18n="pricing.subtitle">Start free and upgrade only when you need more. No hidden fees, no surprises.</p>
       </div>
       <div class="pricing-grid">
         <div class="pricing-card reveal">
           <div class="pc-header">
-            <h3>Free</h3>
-            <p class="pc-desc">Everything to get started</p>
+            <h3 data-i18n="pricing.free.name">Free</h3>
+            <p class="pc-desc" data-i18n="pricing.free.desc">Everything to get started</p>
             <div class="pc-price">
               <span class="pc-amount">€0</span>
-              <span class="pc-period">forever</span>
+              <span class="pc-period" data-i18n="pricing.free.period">forever</span>
             </div>
           </div>
           <ul class="pc-features">
-            <li class="included">Wedding countdown timer</li>
-            <li class="included">Up to 50 guests</li>
-            <li class="included">Basic checklists</li>
-            <li class="included">Venue browsing</li>
-            <li class="included">Basic budget tracking</li>
-            <li class="excluded">Unlimited guests</li>
-            <li class="excluded">Premium venues &amp; churches</li>
-            <li class="excluded">Collaborative planning</li>
-            <li class="excluded">Priority support</li>
+            <li class="included" data-i18n="pricing.free.f1">Wedding countdown timer</li>
+            <li class="included" data-i18n="pricing.free.f2">Up to 50 guests</li>
+            <li class="included" data-i18n="pricing.free.f3">Basic checklists</li>
+            <li class="included" data-i18n="pricing.free.f4">Venue browsing</li>
+            <li class="included" data-i18n="pricing.free.f5">Basic budget tracking</li>
+            <li class="excluded" data-i18n="pricing.free.f6">Unlimited guests</li>
+            <li class="excluded" data-i18n="pricing.free.f7">Premium venues &amp; churches</li>
+            <li class="excluded" data-i18n="pricing.free.f8">Collaborative planning</li>
+            <li class="excluded" data-i18n="pricing.free.f9">Priority support</li>
           </ul>
-          <a href="#download" class="btn btn-outline btn-full">Get Started Free</a>
+          <a href="#download" class="btn btn-outline btn-full" data-i18n="pricing.free.cta">Get Started Free</a>
         </div>
         <div class="pricing-card pricing-featured reveal">
-          <div class="pc-badge">Most Popular</div>
+          <div class="pc-badge" data-i18n="pricing.premium.badge">Most Popular</div>
           <div class="pc-header">
-            <h3>Premium</h3>
-            <p class="pc-desc">For the perfect wedding</p>
+            <h3 data-i18n="pricing.premium.name">Premium</h3>
+            <p class="pc-desc" data-i18n="pricing.premium.desc">For the perfect wedding</p>
             <div class="pc-price">
               <span class="pc-amount">€9.99</span>
-              <span class="pc-period">/ month</span>
+              <span class="pc-period" data-i18n="pricing.premium.period">/ month</span>
             </div>
           </div>
           <ul class="pc-features">
-            <li class="included">Everything in Free</li>
-            <li class="included">Unlimited guests</li>
-            <li class="included">Advanced checklists</li>
-            <li class="included">Premium venues &amp; churches</li>
-            <li class="included">Advanced budget analytics</li>
-            <li class="included">Service provider booking</li>
-            <li class="included">Collaborative planning</li>
-            <li class="included">Priority support</li>
-            <li class="included">Offline access</li>
+            <li class="included" data-i18n="pricing.premium.f1">Everything in Free</li>
+            <li class="included" data-i18n="pricing.premium.f2">Unlimited guests</li>
+            <li class="included" data-i18n="pricing.premium.f3">Advanced checklists</li>
+            <li class="included" data-i18n="pricing.premium.f4">Premium venues &amp; churches</li>
+            <li class="included" data-i18n="pricing.premium.f5">Advanced budget analytics</li>
+            <li class="included" data-i18n="pricing.premium.f6">Service provider booking</li>
+            <li class="included" data-i18n="pricing.premium.f7">Collaborative planning</li>
+            <li class="included" data-i18n="pricing.premium.f8">Priority support</li>
+            <li class="included" data-i18n="pricing.premium.f9">Offline access</li>
           </ul>
-          <a href="#download" class="btn btn-primary btn-full">Start Free Trial</a>
-          <p class="pc-note">14-day free trial · Cancel anytime</p>
+          <a href="#download" class="btn btn-primary btn-full" data-i18n="pricing.premium.cta">Start Free Trial</a>
+          <p class="pc-note" data-i18n="pricing.premium.note">14-day free trial · Cancel anytime</p>
         </div>
       </div>
     </div>
@@ -443,71 +448,71 @@
   <section class="faq section" id="faq">
     <div class="container faq-inner">
       <div class="section-header">
-        <span class="section-tag">FAQ</span>
-        <h2 class="section-title">Frequently Asked<br /><span class="script">Questions</span></h2>
+        <span class="section-tag" data-i18n="faq.tag">FAQ</span>
+        <h2 class="section-title" data-i18n="faq.title">Frequently Asked<br /><span class="script">Questions</span></h2>
       </div>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>Is Honeymooners available on both iOS and Android?</span>
+            <span data-i18n="faq.q1">Is Honeymooners available on both iOS and Android?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>Yes! Honeymooners is available on both iOS (App Store) and Android (Google Play). You and your partner can use it seamlessly across different devices and platforms.</p>
+            <p data-i18n="faq.a1">Yes! Honeymooners is available on both iOS (App Store) and Android (Google Play). You and your partner can use it seamlessly across different devices and platforms.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>Can my partner and I use it together?</span>
+            <span data-i18n="faq.q2">Can my partner and I use it together?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>Absolutely! Honeymooners is built for couples. Invite your partner and collaborate on every aspect of your wedding in real-time — any device, any time.</p>
+            <p data-i18n="faq.a2">Absolutely! Honeymooners is built for couples. Invite your partner and collaborate on every aspect of your wedding in real-time — any device, any time.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>Is my personal data safe and private?</span>
+            <span data-i18n="faq.q3">Is my personal data safe and private?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>Your privacy is our top priority. All data is end-to-end encrypted and stored securely. We never sell your personal information to third parties — ever.</p>
+            <p data-i18n="faq.a3">Your privacy is our top priority. All data is end-to-end encrypted and stored securely. We never sell your personal information to third parties — ever.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>Can I use Honeymooners in Greek?</span>
+            <span data-i18n="faq.q4">Can I use Honeymooners in Greek?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>Yes! Honeymooners fully supports English, Greek, and Cypriot Greek. Switch languages at any time from the Settings screen — no reinstall needed.</p>
+            <p data-i18n="faq.a4">Yes! Honeymooners fully supports English, Greek, and Cypriot Greek. Switch languages at any time from the Settings screen — no reinstall needed.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>How do I cancel my Premium subscription?</span>
+            <span data-i18n="faq.q5">How do I cancel my Premium subscription?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>You can cancel anytime from the app settings or through your App Store / Google Play subscription management. No questions asked, no hassle.</p>
+            <p data-i18n="faq.a5">You can cancel anytime from the app settings or through your App Store / Google Play subscription management. No questions asked, no hassle.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>What happens to my data after I cancel?</span>
+            <span data-i18n="faq.q6">What happens to my data after I cancel?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>Your wedding data remains accessible on the Free plan after cancellation. We'll never delete your information without giving you ample time to export it first.</p>
+            <p data-i18n="faq.a6">Your wedding data remains accessible on the Free plan after cancellation. We'll never delete your information without giving you ample time to export it first.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            <span>Does it work offline?</span>
+            <span data-i18n="faq.q7">Does it work offline?</span>
             <span class="faq-chevron" aria-hidden="true">+</span>
           </button>
           <div class="faq-a" hidden>
-            <p>Premium subscribers enjoy offline access to their wedding data. Your checklists, guest list, and notes are always available — even without internet connection.</p>
+            <p data-i18n="faq.a7">Premium subscribers enjoy offline access to their wedding data. Your checklists, guest list, and notes are always available — even without internet connection.</p>
           </div>
         </div>
       </div>
@@ -521,8 +526,8 @@
       <div class="download-logo">
         <img src="assets/logo.png" alt="Honeymooners" class="dl-logo-img" />
       </div>
-      <h2 class="download-title">Start Planning Your<br /><span class="script">Dream Wedding Today</span></h2>
-      <p class="download-subtitle">Join 10,000+ couples who chose Honeymooners. Free to download on iOS and Android.</p>
+      <h2 class="download-title" data-i18n="download.title">Start Planning Your<br /><span class="script">Dream Wedding Today</span></h2>
+      <p class="download-subtitle" data-i18n="download.subtitle">Join 10,000+ couples who chose Honeymooners. Free to download on iOS and Android.</p>
       <div class="store-buttons">
         <a href="#" class="store-btn" aria-label="Download on the App Store">
           <div class="store-icon-wrap">
@@ -531,8 +536,8 @@
             </svg>
           </div>
           <div class="store-text-wrap">
-            <span class="store-sub">Download on the</span>
-            <span class="store-name">App Store</span>
+            <span class="store-sub" data-i18n="download.store1-sub">Download on the</span>
+            <span class="store-name" data-i18n="download.store1-name">App Store</span>
           </div>
         </a>
         <a href="#" class="store-btn" aria-label="Get it on Google Play">
@@ -542,12 +547,12 @@
             </svg>
           </div>
           <div class="store-text-wrap">
-            <span class="store-sub">Get it on</span>
-            <span class="store-name">Google Play</span>
+            <span class="store-sub" data-i18n="download.store2-sub">Get it on</span>
+            <span class="store-name" data-i18n="download.store2-name">Google Play</span>
           </div>
         </a>
       </div>
-      <p class="download-note">Free to download · No credit card required · Cancel Premium anytime</p>
+      <p class="download-note" data-i18n="download.note">Free to download · No credit card required · Cancel Premium anytime</p>
     </div>
   </section>
 
@@ -560,7 +565,7 @@
             <img src="assets/logo.png" alt="Honeymooners" class="logo-img" />
             <span class="logo-text">Honeymooners</span>
           </a>
-          <p class="footer-tagline">Love requires patience — and the right tools. Plan your perfect day with Honeymooners.</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Love requires patience — and the right tools. Plan your perfect day with Honeymooners.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -578,46 +583,46 @@
         </div>
         <div class="footer-links-grid">
           <div class="footer-col">
-            <h4>Product</h4>
+            <h4 data-i18n="footer.product">Product</h4>
             <ul>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#download">Download</a></li>
-              <li><a href="#">Changelog</a></li>
+              <li><a href="#features" data-i18n="footer.features">Features</a></li>
+              <li><a href="#pricing" data-i18n="footer.pricing">Pricing</a></li>
+              <li><a href="#download" data-i18n="footer.download">Download</a></li>
+              <li><a href="#" data-i18n="footer.changelog">Changelog</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Company</h4>
+            <h4 data-i18n="footer.company">Company</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Press</a></li>
+              <li><a href="#" data-i18n="footer.about">About Us</a></li>
+              <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+              <li><a href="#" data-i18n="footer.careers">Careers</a></li>
+              <li><a href="#" data-i18n="footer.press">Press</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Support</h4>
+            <h4 data-i18n="footer.support">Support</h4>
             <ul>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Community</a></li>
+              <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
+              <li><a href="#" data-i18n="footer.help">Help Center</a></li>
+              <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+              <li><a href="#" data-i18n="footer.community">Community</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Legal</h4>
+            <h4 data-i18n="footer.legal">Legal</h4>
             <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">GDPR</a></li>
+              <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+              <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+              <li><a href="#" data-i18n="footer.cookies">Cookie Policy</a></li>
+              <li><a href="#" data-i18n="footer.gdpr">GDPR</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Honeymooners. All rights reserved. Made with ❤️ for couples everywhere.</p>
-        <p class="footer-script script">Love requires patience</p>
+        <p data-i18n="footer.copy">© 2026 Honeymooners. All rights reserved. Made with ❤️ for couples everywhere.</p>
+        <p class="footer-script script" data-i18n="footer.script">Love requires patience</p>
       </div>
     </div>
   </footer>
