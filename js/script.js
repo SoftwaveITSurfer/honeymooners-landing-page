@@ -222,6 +222,8 @@
       'app.guests-stat': '124 confirmed · 8 pending', 'app.mini-budget': 'Budget Overview',
       'app.budget-total': 'Total', 'app.budget-venue': 'Venue', 'app.budget-catering': 'Catering',
       'app.budget-flowers': 'Flowers', 'app.budget-photo': 'Photo', 'app.budget-remaining': '€5,580 remaining',
+      'cookie.text': 'We use cookies to improve your experience and analyse site usage. By clicking "Accept All" you consent to our use of cookies.',
+      'cookie.link': 'Cookie Policy', 'cookie.accept': 'Accept All', 'cookie.reject': 'Reject',
     },
     gr: {
       'nav.features': 'Χαρακτηριστικά', 'nav.how-it-works': 'Πώς Λειτουργεί', 'nav.reviews': 'Κριτικές',
@@ -320,6 +322,8 @@
       'app.guests-stat': '124 επιβεβαιώθηκαν · 8 σε αναμονή', 'app.mini-budget': 'Επισκόπηση Προϋπολογισμού',
       'app.budget-total': 'Σύνολο', 'app.budget-venue': 'Χώρος', 'app.budget-catering': 'Catering',
       'app.budget-flowers': 'Λουλούδια', 'app.budget-photo': 'Φωτογράφος', 'app.budget-remaining': '€5.580 υπόλοιπο',
+      'cookie.text': 'Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας και να αναλύσουμε τη χρήση της ιστοσελίδας. Κάνοντας κλικ στο "Αποδοχή Όλων" συναινείτε στη χρήση cookies.',
+      'cookie.link': 'Πολιτική Cookies', 'cookie.accept': 'Αποδοχή Όλων', 'cookie.reject': 'Απόρριψη',
     }
   };
 
@@ -328,7 +332,7 @@
     gr: 'Honeymooners – Σχεδιάστε τον Τέλειο Γάμο Μαζί'
   };
 
-  let currentLang = localStorage.getItem('hm-lang') || 'en';
+  let currentLang = localStorage.getItem('hm-lang') || 'gr';
 
   function applyLang(lang) {
     currentLang = lang;
@@ -354,6 +358,22 @@
   }
 
   applyLang(currentLang);
+
+  /* ---------- Cookie consent ---------- */
+  const cookieBanner = document.getElementById('cookie-banner');
+  if (cookieBanner && !localStorage.getItem('hm-cookie-consent')) {
+    setTimeout(() => cookieBanner.classList.add('visible'), 800);
+  }
+
+  function dismissCookie(choice) {
+    localStorage.setItem('hm-cookie-consent', choice);
+    cookieBanner.classList.remove('visible');
+  }
+
+  const cookieAccept = document.getElementById('cookie-accept');
+  const cookieReject = document.getElementById('cookie-reject');
+  if (cookieAccept) cookieAccept.addEventListener('click', () => dismissCookie('accepted'));
+  if (cookieReject) cookieReject.addEventListener('click', () => dismissCookie('rejected'));
 
   /* ---------- Add stagger delay to feature cards ---------- */
   document.querySelectorAll('.features-grid .reveal').forEach((card, i) => {
