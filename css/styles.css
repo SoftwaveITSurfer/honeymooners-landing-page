@@ -27,7 +27,7 @@
   --radius-lg:     24px;
   --radius-xl:     32px;
   --font-body:     'Inter', system-ui, sans-serif;
-  --font-script:   'Dancing Script', cursive;
+  --font-script: 'Playfair Display', serif;
   --transition:    0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --max-w:         1200px;
 }
@@ -50,12 +50,11 @@ ul { list-style: none; }
 button { border: none; background: none; cursor: pointer; font: inherit; }
 
 /* ---------- Typography Utilities ---------- */
-.script { font-family: var(--font-script); font-weight: 700; color: var(--rose); }
-
-/* Dancing Script has no Greek glyphs — fall back to Inter italic */
-html[lang="el"] .script {
-  font-family: var(--font-body);
+.script {
+  font-family: var(--font-script), serif;
+  font-weight: 400;
   font-style: italic;
+  color: var(--rose);
 }
 
 /* ---------- Layout ---------- */
@@ -108,6 +107,27 @@ html[lang="el"] .script {
 .btn-lg { padding: 16px 36px; font-size: 1.05rem; }
 .btn-full { width: 100%; justify-content: center; }
 .play-icon { font-size: 0.75rem; }
+
+/* ---------- Disabled Store Button ---------- */
+.store-btn.disabled {
+  background: #d1d1d1;
+  color: #888888;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: none;
+  transform: none !important;
+  cursor: not-allowed;
+}
+
+.store-btn.disabled .store-icon-wrap {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.store-btn.disabled .store-sub,
+.store-btn.disabled .store-name {
+  color: #6e6b6b;
+}
 
 /* ---------- Section Header ---------- */
 .section-header { text-align: center; margin-bottom: 64px; }
@@ -166,14 +186,15 @@ html[lang="el"] .script {
   flex-shrink: 0;
 }
 .logo-img {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
 }
 .logo-text {
-  font-family: var(--font-script);
+  font-family: var(--font-script), serif;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-style: italic;
+  font-weight: 600;
   color: var(--rose);
 }
 .nav-links {
@@ -181,6 +202,10 @@ html[lang="el"] .script {
   align-items: center;
   gap: 32px;
   margin-left: auto;
+}
+.nav-links .btn-primary {
+  color: white !important;
+  background-color: var(--rose);
 }
 /* ---------- Language Toggle ---------- */
 .lang-toggle {
@@ -213,7 +238,11 @@ html[lang="el"] .script {
   transition: color var(--transition);
 }
 .nav-links a:hover { color: var(--rose); }
-.nav-actions { margin-left: 24px; }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
 .hamburger {
   display: none;
   flex-direction: column;
@@ -311,9 +340,9 @@ html[lang="el"] .script {
   50% { transform: scale(1.4); opacity: 0.6; }
 }
 .hero-title {
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.15;
   margin-bottom: 20px;
   color: var(--text-primary);
 }
